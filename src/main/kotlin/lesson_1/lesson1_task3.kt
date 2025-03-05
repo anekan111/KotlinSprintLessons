@@ -15,24 +15,21 @@ fun main() {
         Взлет – 09:07
         Посадка – 10:55 */
 
-    println("lesson1 task3\n")
-
-    val year: Int = 1961
-    var hour: Int = 9
-    var minute: Int = 7
+    val year: String = "1961"
+    var hour: String = "09"
+    var minute: String = "07"
 
     println(year)
     println(hour)
     println(minute)
 
-    val timeFormat = "%02d:%02d"
+    val timeFormat = "[%s:%s]"
     val startTime = String.format(timeFormat, hour, minute)
-    hour = 10
-    minute = 55
+    hour = "10"
+    minute = "55"
     val landingTime = String.format(timeFormat, hour, minute)
 
     println("Год полета – $year")
     println("Взлет – $startTime")
     println("Посадка – $landingTime")
 }
-
